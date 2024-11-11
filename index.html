@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+<body>
+        <div class="container">
+            <div class="header">
+                <div class="logo">
+                    <img src="images/logo1.png" alt="">
+                </div>
+                <ul class="menu">
+                    <li><a href="#">탑</a></li>
+                    <li><a href="#">아우터</a></li>
+                    <li><a href="#">악세사리</a></li>
+                    <li><a href="#">신발</a></li>
+                
+                </ul>
+            </div>
+
+            <div class="slide">
+                <img src="images/s1.jpg" alt="">
+
+            </div>
+
+            <div class="contents">
+
+                <div class="box">
+
+                    <button class="btn-notice">공지사항</button>
+                    <button class="btn-gallery">갤러리</button>
+
+                    <div class="notice">
+
+                        <ul>
+                            <li class="open-pop">2024학년도 저스트쇼핑몰 초특가 이벤트</li>
+                            <li>저스트쇼피이몰 수원점 Grand Open!</li>
+                            <li>선착순 20명께만 들리는 1+1 사은품 증정</li>
+                            <li>11월 11일 빼빼로데이 고백하세요~</li>
+                            <li>2025학년도 대입수능 합격 기원 초코파이 증정</li>
+                        </ul>
+                    </div>
+
+                    <ul class="gallery">
+                        <li><img src="images/g2.jpg" alt=""></li>
+                        <li><img src="images/g3.jpg" alt=""></li>
+                        <li><img src="images/g2.jpg" alt=""></li>
+
+                    </ul>
+
+                </div>
+
+              
+
+                <div class="banner">
+                    <img src="images/b1.jpg" alt="">
+                </div>
+
+                <div class="baro">
+                    <img src="images/g2.jpg" alt="">
+
+                </div>
+
+
+            </div>
+
+            <div class="footer">
+                <div class="logo">
+                    <img src="images/logo2.png" alt="">
+                </div>
+                <div class="copy">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus exercitationem ipsum assumenda eius voluptatum autem deleniti veritatis eligendi at mollitia ratione vero laborum, iusto porro laboriosam asperiores inventore unde. Iure!
+
+
+                </div>
+            </div>
+        </div>
+
+            <div class="pop">
+                <h1>저스트 쇼핑몰 초특가 할인</h1>
+                <h3>11월 11일까지 선착순 20명!</h3>
+                <h3>놓치지 마세요</h3>
+
+                <button class="close-pop">닫기</button>
+            </div>
+
+
+
+
+            <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+            <script>
+                //첫번쨰 공지사항을 클릭하면 pop영역이 보인다.
+                $(".open-pop").click(function(){
+
+                    $(".pop").fadeIn();
+
+                    //$(".pop").css("display","block")
+
+                })
+                
+
+
+                //닫기 버튼을 클릭하면 pop영역이 사라진다
+                $(".close-pop").click(function(){
+                    $(".pop").fadeOut();
+
+                    //$(".pop").css("display","none")
+                })
+
+                $(".gallery").hide();
+                //btn-gallery를 클릭하면
+                // 1. .notice영역이 안보임.
+                // 2. .gallery영역이 보임.
+                $(".btn-gallery").click(function(){
+                    $(".gallery").show(); // $(".gallery").css("display","block")
+                    $(".notice").hide();
+
+                  
+                })
+
+
+
+                //btn-notice를 클릭하면
+                // 1. .gallery영역이 안보임.
+                // 2. .notice영역이 보임.
+                 $(".btn-notice").click(function(){
+
+                    $(".gallery").hide();
+                    $(".notice").show();
+
+                    
+
+                })
+
+
+
+
+
+            </script>
+</body>
+</html>

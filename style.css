@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+    border: 1px solid black;
+  }
+  a{
+    display: block;
+    text-decoration: none;
+    color: black;
+  }
+  li{
+    list-style-type: none;
+  }
+
+  .container{
+    width: 1200px;
+    height: 700px;
+    margin: 0 auto;
+
+  }
+  .header{
+    width: 1200px;
+    height: 100px;
+
+
+    display: flex;
+    justify-content: space-between;
+
+  }
+  .header .logo{
+    width: 200px;
+    height: 100px;
+  }
+  .logo img{
+    width: 200px;
+    height: 100px;
+  }
+  .header .menu{
+    width: 600px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+  }
+  .menu li{
+    width: 150px;
+    height: 30px;
+    text-align: center;
+
+  }
+  .slide{
+    width: 1200px;
+    height: 300px;
+
+  }
+  .slide img{
+    width: 1200px;
+    height: 300px;
+  }
+  .contents{
+    width: 1200px;
+    height: 200px;
+
+    display: flex;
+
+  }
+  .notice{
+    width: 400px;
+    height: 200px;
+  }
+
+  .gallery{
+    width: 400px;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+  }
+  .gallery li{
+
+  }
+  .gallery img{
+    width: 60px;
+    height: 60px;
+  }
+
+  .banner{
+    width: 400px;
+    height: 200px;
+  }
+
+
+  .banner img{
+    width: 400px;
+    height: 200px;
+  }
+  .baro{
+    width: 400px;
+    height: 200px;
+  }
+  .baro img{
+    width: 400px;
+    height: 200px;
+  }
+  .footer{
+    width: 1200px;
+    height: 100px;
+
+    display: flex;
+  }
+  .footer .logo{
+    width: 200px;
+    height: 100px;
+  }
+  .footer .copy{
+    width: 1000px;
+    height: 100px;
+  }
+  .copy{
+    width: 1000px;
+    height: 100px;
+    text-align: center;
+    padding: 10px;
+  }
+  .pop{
+width: 300px;
+height: 300px;
+background-color: salmon;
+color: white;
+
+
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    display: none;
+  }
+
