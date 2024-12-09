@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .alert-box1{
+            background-color:skyblue;
+            padding: 20px;
+            color: white;
+            border-radius: 5px;
+            display: none;
+        }
+        .alert-box2{
+            background-color:pink;
+            padding: 20px;
+            color: white;
+            border-radius: 5px;
+            display: none;
+            
+        }
+        .alert-box3{
+            background-color:yellowgreen;
+            padding: 20px;
+            color: white;
+            border-radius: 5px;
+            display: none;
+        
+        }
+    </style>
+</head>
+<body>
+    
+<h1 class="hello">안녕하세요</h1>
+
+<h1 id="hi">JS 초보에요</h1>
+
+<div class="alert-box1"><span onclick=사라져라1()>X</span></div>
+<div class="alert-box2"><span onclick=사라져라2()>X</span></div>
+<div class="alert-box3"><span onclick=사라져라3()>X</span></div>
+<button onclick="나타나라">나와라</button>
+
+    <script>
+        //document.getElementsByClassName("hello").innerHTML = "바보";
+        //document.getElementById("hello").innerHTML = "바보";
+        //document.querySelector("") 위에거 통합 class . Id #으로 구분
+        //.innerHTML 은 내부 파일 스타일 쓸땐 .style.여기는 바꾸고 싶은것
+
+       // document.querySelector(".hello").innerHTML= "후후후";
+       // document.querySelector("#popo").innerHTML = "Hi there";
+
+
+        // document.querySelector("#hi").innerHTML = "JS 고수에요";
+        // document.querySelector("#hi").style.color = "green";
+        // document.querySelector("#hi").style.fontSize= "100px";
+        // document.querySelector("#hi").style.backgroundColor = "Red";
+
+        function 사라져라1(){
+        document.querySelector('.alert-box1').style.display = 'none'
+        }
+        function 사라져라2(){
+        document.querySelector('.alert-box2').style.display = 'none'
+        }
+        function 사라져라3(){
+        document.querySelector('.alert-box3').style.display = 'none'
+        }
+        function 나타나라() {
+
+            document.querySelector(".div").style.display = "block"
+            
+            
+
+        }
+    </script>       
+
+    
+</body>
+</html>
